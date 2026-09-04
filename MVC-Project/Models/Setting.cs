@@ -1,6 +1,8 @@
-﻿namespace MVC_Project.Models
+﻿using MVC_Project.Models;
+
+namespace MVC_MiniProject.Models
 {
-    public class Setting: BaseEntity
+    public class Setting : BaseEntity
     {
         public string Key { get; set; }
         public string Value { get; set; }

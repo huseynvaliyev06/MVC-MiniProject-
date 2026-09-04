@@ -1,6 +1,8 @@
-﻿namespace MVC_Project.Models
+﻿using MVC_Project.Models;
+
+namespace MVC_MiniProject.Models
 {
-    public class Event: BaseEntity
+    public class Event : BaseEntity
     {
         public int Date { get; set; }
         public string Month { get; set; }

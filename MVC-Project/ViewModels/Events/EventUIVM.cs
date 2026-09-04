@@ -1,6 +1,10 @@
-﻿namespace MVC_Project.ViewModels.Events
+﻿namespace MVC_MiniProject.ViewModels.Events
 {
     public class EventUIVM
     {
+        public int Date { get; set; }
+        public string Month { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
     }
 }

@@ -1,6 +1,8 @@
-﻿namespace MVC_Project.Models
+﻿using MVC_Project.Models;
+
+namespace MVC_MiniProject.Models
 {
-    public class Slider: BaseEntity
+    public class Slider : BaseEntity
     {
         public string SliderBanner { get; set; }
         public string Logo { get; set; }

@@ -1,6 +1,7 @@
-﻿namespace MVC_Project.ViewModels.Item
+﻿namespace MVC_MiniProject.ViewModels.Items
 {
     public class ItemUIVM
     {
+        public string Name { get; set; }
     }
 }
