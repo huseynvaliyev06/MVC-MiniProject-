@@ -1,5 +1,4 @@
-﻿
-using MVC_Project.ViewModels.AboutLefts;
+﻿using MVC_MiniProject.ViewModels.AboutLefts;
 
 namespace MVC_MiniProject.Services.Interfaces
 {

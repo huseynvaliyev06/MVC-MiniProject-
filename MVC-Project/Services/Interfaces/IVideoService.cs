@@ -1,5 +1,4 @@
-﻿
-using MVC_Project.ViewModels.Videos;
+﻿using MVC_MiniProject.ViewModels.Videos;
 
 namespace MVC_MiniProject.Services.Interfaces
 {

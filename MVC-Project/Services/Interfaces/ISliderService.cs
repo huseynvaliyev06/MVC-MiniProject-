@@ -1,5 +1,4 @@
-﻿
-using MVC_Project.ViewModels.Sliders;
+﻿using MVC_MiniProject.ViewModels.Sliders;
 
 namespace MVC_MiniProject.Services.Interfaces
 {

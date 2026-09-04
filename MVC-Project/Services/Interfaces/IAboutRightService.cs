@@ -1,5 +1,4 @@
-﻿
-using MVC_Project.ViewModels.AboutRights;
+﻿using MVC_MiniProject.ViewModels.AboutRights;
 
 namespace MVC_MiniProject.Services.Interfaces
 {

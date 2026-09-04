@@ -1,5 +1,4 @@
-﻿
-using MVC_Project.ViewModels.News;
+﻿using MVC_MiniProject.ViewModels.News;
 
 namespace MVC_MiniProject.Services.Interfaces
 {

@@ -1,5 +1,4 @@
-﻿
-using MVC_Project.ViewModels.Events;
+﻿using MVC_MiniProject.ViewModels.Events;
 
 namespace MVC_MiniProject.Services.Interfaces
 {
