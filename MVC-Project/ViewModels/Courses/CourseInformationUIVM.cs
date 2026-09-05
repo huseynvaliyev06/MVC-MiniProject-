@@ -1,6 +1,4 @@
-﻿using MVC_Project.ViewModels.Courses;
-
-namespace MVC_MiniProject.ViewModels.Courses
+﻿namespace MVC_MiniProject.ViewModels.Courses
 {
     public class CourseInformationUIVM
     {

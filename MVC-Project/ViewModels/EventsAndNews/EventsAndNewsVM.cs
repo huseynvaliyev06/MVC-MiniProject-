@@ -1,5 +1,6 @@
 ﻿using MVC_MiniProject.ViewModels.Events;
-using MVC_Project.ViewModels.News;
+using MVC_MiniProject.ViewModels.News;
+
 
 namespace MVC_MiniProject.ViewModels.EventsAndNews
 {

@@ -1,6 +1,7 @@
 ﻿
-using MVC_Project.ViewModels.AboutLefts;
-using MVC_Project.ViewModels.AboutRights;
+using MVC_MiniProject.ViewModels.AboutLefts;
+using MVC_MiniProject.ViewModels.AboutRights;
+
 
 namespace MVC_MiniProject.ViewModels.AboutLeftAndRight
 {
