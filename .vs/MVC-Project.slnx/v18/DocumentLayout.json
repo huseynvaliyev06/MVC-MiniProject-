@@ -3,12 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewmodels\\aboutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewmodels\\aboutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewmodels\\aboutleftandright\\aboutleftandrightvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewmodels\\aboutleftandright\\aboutleftandrightvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\views\\shared\\components\\join\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\shared\\components\\join\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\joinviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\joinviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\videoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\videoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\views\\shared\\components\\video\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\shared\\components\\video\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\views\\shared\\components\\coursesandsetting\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\shared\\components\\coursesandsetting\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\views\\shared\\components\\settingandcourse\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\shared\\components\\settingandcourse\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\coursesandsettingviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\coursesandsettingviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewmodels\\coursesandsetting\\coursesandsettingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewmodels\\coursesandsetting\\coursesandsettingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\settingandcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\settingandcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\homecourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\homecourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\views\\shared\\components\\detailcourse\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\shared\\components\\detailcourse\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\views\\shared\\components\\aboutleftandright\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\shared\\components\\aboutleftandright\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\videoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\videoviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\teacherviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\teacherviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,24 +111,12 @@
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\sliderviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\settingandcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\settingandcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\joinviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\joinviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\itemviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\itemviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\homeviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\homeviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\homecourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\homecourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\detailcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\detailcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\coursesandsettingviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewcomponents\\coursesandsettingviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewcomponents\\aboutleftandrightviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,10 +185,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewmodels\\eventsandnews\\eventsandnewsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewmodels\\eventsandnews\\eventsandnewsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\viewmodels\\aboutleftandright\\aboutleftandrightvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewmodels\\aboutleftandright\\aboutleftandrightvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -271,10 +307,6 @@
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\viewmodels\\item\\itemuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvc\\mvc-miniproject-\\mvc-project\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -318,7 +350,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -326,15 +358,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DetailController.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\DetailController.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\DetailController.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\DetailController.cs",
-              "RelativeToolTip": "MVC-Project\\Controllers\\DetailController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AboutVM.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutVM.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\AboutVM.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutVM.cs",
+              "RelativeToolTip": "MVC-Project\\ViewModels\\AboutVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:29:17.09Z",
+              "WhenOpened": "2026-09-05T01:38:22.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\Join\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\Components\\Join\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\Join\\Default.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\Shared\\Components\\Join\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T01:36:19.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\Video\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\Components\\Video\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\Video\\Default.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\Shared\\Components\\Video\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T01:33:44.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\SettingAndCourse\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\Components\\SettingAndCourse\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\SettingAndCourse\\Default.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\Shared\\Components\\SettingAndCourse\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T01:06:43.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CoursesAndSettingVM.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\CoursesAndSetting\\CoursesAndSettingVM.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\CoursesAndSetting\\CoursesAndSettingVM.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\CoursesAndSetting\\CoursesAndSettingVM.cs",
+              "RelativeToolTip": "MVC-Project\\ViewModels\\CoursesAndSetting\\CoursesAndSettingVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T01:05:42.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\CoursesAndSetting\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\Components\\CoursesAndSetting\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\CoursesAndSetting\\Default.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\Shared\\Components\\CoursesAndSetting\\Default.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwDkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T01:02:33.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVC-Project\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T07:15:55.968Z",
               "EditorCaption": ""
             },
             {
@@ -343,102 +453,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "MVC-Project\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "MVC-Project\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-05T00:25:21.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "JoinViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\JoinViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\JoinViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\JoinViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\JoinViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:15:45.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ItemViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\ItemViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\ItemViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\ItemViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\ItemViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:15:23.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SliderViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\SliderViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\SliderViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\SliderViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\SliderViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:09:13.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TeacherViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:09:06.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AboutController.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\AboutController.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\AboutController.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\AboutController.cs",
-              "RelativeToolTip": "MVC-Project\\Controllers\\AboutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T07:14:55.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "CourseController.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\CourseController.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Controllers\\CourseController.cs",
               "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\CourseController.cs",
               "RelativeToolTip": "MVC-Project\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T07:15:14.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVC-Project\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Program.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Program.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Program.cs",
+              "RelativeToolTip": "MVC-Project\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T07:15:55.968Z",
+              "WhenOpened": "2026-08-28T08:04:52.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VideoViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\VideoViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\VideoViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\VideoViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\VideoViewComponent.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:09:01.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutLeftAndRightVM.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
+              "RelativeToolTip": "MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T14:33:42.736Z",
               "EditorCaption": ""
             },
             {
@@ -451,11 +513,149 @@
               "RelativeToolTip": "MVC-Project\\ViewComponents\\SettingAndCourseViewComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:16:03.779Z"
+              "WhenOpened": "2026-09-05T00:16:03.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
+              "Title": "JoinViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\JoinViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\JoinViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\JoinViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\JoinViewComponent.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:15:45.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeCourseViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:13:50.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CoursesAndSettingViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:06:53.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\DetailCourse\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\Components\\DetailCourse\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\DetailCourse\\Default.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\Shared\\Components\\DetailCourse\\Default.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T01:01:52.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\AboutLeftAndRight\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\Components\\AboutLeftAndRight\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\Components\\AboutLeftAndRight\\Default.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\Shared\\Components\\AboutLeftAndRight\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T01:00:23.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SliderViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\SliderViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\SliderViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\SliderViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\SliderViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:09:13.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ItemViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\ItemViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\ItemViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\ItemViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\ItemViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:15:23.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TeacherViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
+              "RelativeToolTip": "MVC-Project\\ViewComponents\\TeacherViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:09:06.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "MVC-Project\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T07:14:55.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MVC-Project\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MVC-Project\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T00:25:21.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DetailController.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\DetailController.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\DetailController.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Controllers\\DetailController.cs",
+              "RelativeToolTip": "MVC-Project\\Controllers\\DetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T00:29:17.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Detail\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC-Project\\Views\\Detail\\Index.cshtml",
@@ -467,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MVC-Project\\Views\\_ViewImports.cshtml",
@@ -479,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\About\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC-Project\\Views\\About\\Index.cshtml",
@@ -491,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Course\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC-Project\\Views\\Course\\Index.cshtml",
@@ -503,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC-Project\\Views\\Home\\Index.cshtml",
@@ -515,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "HomeViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\HomeViewComponent.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\HomeViewComponent.cs",
@@ -527,31 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "HomeCourseViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\HomeCourseViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:13:50.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VideoViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\VideoViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\VideoViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\VideoViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\VideoViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:09:01.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "HeaderViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\HeaderViewComponent.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\HeaderViewComponent.cs",
@@ -563,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "FooterViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\FooterViewComponent.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\FooterViewComponent.cs",
@@ -575,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "EventsAndNewsViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\EventsAndNewsViewComponent.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\EventsAndNewsViewComponent.cs",
@@ -587,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "DetailCourseViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\DetailCourseViewComponent.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\DetailCourseViewComponent.cs",
@@ -599,19 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CoursesAndSettingViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
-              "RelativeToolTip": "MVC-Project\\ViewComponents\\CoursesAndSettingViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-05T00:06:53.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "AboutLeftAndRightViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewComponents\\AboutLeftAndRightViewComponent.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewComponents\\AboutLeftAndRightViewComponent.cs",
@@ -623,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 44,
               "Title": "CourseInformationUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Courses\\CourseInformationUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Courses\\CourseInformationUIVM.cs",
@@ -635,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "CoursesDetailVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Courses\\CoursesDetailVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Courses\\CoursesDetailVM.cs",
@@ -647,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
               "Title": "DetailService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\DetailService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\DetailService.cs",
@@ -659,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "EventService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\EventService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\EventService.cs",
@@ -671,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "ItemService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\ItemService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\ItemService.cs",
@@ -683,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
               "Title": "NewsService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\NewsService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\NewsService.cs",
@@ -695,7 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 38,
               "Title": "SettingService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\SettingService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\SettingService.cs",
@@ -707,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "SliderService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\SliderService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\SliderService.cs",
@@ -719,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 36,
               "Title": "TeacherService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\TeacherService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\TeacherService.cs",
@@ -731,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "VideoService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\VideoService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\VideoService.cs",
@@ -743,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 43,
               "Title": "AboutLeftService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\AboutLeftService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\AboutLeftService.cs",
@@ -755,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 45,
               "Title": "EventsAndNewsVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\EventsAndNews\\EventsAndNewsVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\EventsAndNews\\EventsAndNewsVM.cs",
@@ -767,19 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "AboutLeftAndRightVM.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
-              "RelativeToolTip": "MVC-Project\\ViewModels\\AboutLeftAndRight\\AboutLeftAndRightVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T14:33:42.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 46,
               "Title": "CourseService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\CourseService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\CourseService.cs",
@@ -791,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 47,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\Teacher.cs",
@@ -803,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 48,
               "Title": "AboutRightService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\AboutRightService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\AboutRightService.cs",
@@ -815,7 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 49,
               "Title": "CourseImmage.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\CourseImmage.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\CourseImmage.cs",
@@ -827,7 +979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 54,
               "Title": "ITeacherService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\ITeacherService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\ITeacherService.cs",
@@ -839,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 55,
               "Title": "ISliderService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\ISliderService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\ISliderService.cs",
@@ -851,7 +1003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 56,
               "Title": "ISettingService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\ISettingService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\ISettingService.cs",
@@ -863,7 +1015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 57,
               "Title": "INewsService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\INewsService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\INewsService.cs",
@@ -875,7 +1027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 50,
               "Title": "IItemService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IItemService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IItemService.cs",
@@ -887,7 +1039,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 58,
               "Title": "IEventService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IEventService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IEventService.cs",
@@ -899,7 +1051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 59,
               "Title": "IDetailService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IDetailService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IDetailService.cs",
@@ -911,7 +1063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 53,
               "Title": "Video.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\Video.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\Video.cs",
@@ -923,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 52,
               "Title": "IVideoService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IVideoService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IVideoService.cs",
@@ -935,7 +1087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 51,
               "Title": "IAboutLeftService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IAboutLeftService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IAboutLeftService.cs",
@@ -947,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 60,
               "Title": "ICourseService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\ICourseService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\ICourseService.cs",
@@ -959,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 61,
               "Title": "IAboutRightService.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IAboutRightService.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IAboutRightService.cs",
@@ -971,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 62,
               "Title": "AboutLeft.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\AboutLeft.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\AboutLeft.cs",
@@ -983,7 +1135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 63,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Data\\AppDbContext.cs",
@@ -995,7 +1147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 64,
               "Title": "VideoUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Videos\\VideoUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Videos\\VideoUIVM.cs",
@@ -1007,7 +1159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 65,
               "Title": "TeacherUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Teachers\\TeacherUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Teachers\\TeacherUIVM.cs",
@@ -1019,7 +1171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 66,
               "Title": "SliderUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Sliders\\SliderUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Sliders\\SliderUIVM.cs",
@@ -1031,7 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 67,
               "Title": "SettingAndCourseVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\SettingAndCourse\\SettingAndCourseVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\SettingAndCourse\\SettingAndCourseVM.cs",
@@ -1043,7 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 68,
               "Title": "SettingVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Setting\\SettingVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Setting\\SettingVM.cs",
@@ -1055,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 69,
               "Title": "NewsUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\News\\NewsUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\News\\NewsUIVM.cs",
@@ -1067,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 70,
               "Title": "CoursesImageUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Courses\\CoursesImageUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Courses\\CoursesImageUIVM.cs",
@@ -1079,7 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 71,
               "Title": "AboutRightUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutRights\\AboutRightUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\AboutRights\\AboutRightUIVM.cs",
@@ -1091,7 +1243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 72,
               "Title": "AboutLeftUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\AboutLefts\\AboutLeftUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\AboutLefts\\AboutLeftUIVM.cs",
@@ -1103,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 73,
               "Title": "EventUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Events\\EventUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Events\\EventUIVM.cs",
@@ -1115,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 75,
               "Title": "ItemUIVM.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\ViewModels\\Item\\ItemUIVM.cs",
               "RelativeDocumentMoniker": "MVC-Project\\ViewModels\\Item\\ItemUIVM.cs",
@@ -1127,7 +1279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 84,
               "Title": "20260828082324_CreatedCourse.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Migrations\\20260828082324_CreatedCourse.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Migrations\\20260828082324_CreatedCourse.cs",
@@ -1139,19 +1291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Program.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\Program.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Program.cs",
-              "RelativeToolTip": "MVC-Project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T08:04:52.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 76,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\appsettings.Development.json",
               "RelativeDocumentMoniker": "MVC-Project\\appsettings.Development.json",
@@ -1163,7 +1303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 77,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\appsettings.json",
               "RelativeDocumentMoniker": "MVC-Project\\appsettings.json",
@@ -1175,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 74,
               "Title": "Event.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\Event.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\Event.cs",
@@ -1187,7 +1327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 78,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\Item.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\Item.cs",
@@ -1199,7 +1339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 79,
               "Title": "Slider.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\Slider.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\Slider.cs",
@@ -1211,7 +1351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 80,
               "Title": "Setting.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\Setting.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\Setting.cs",
@@ -1223,7 +1363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 81,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Models\\BaseEntity.cs",
               "RelativeDocumentMoniker": "MVC-Project\\Models\\BaseEntity.cs",
@@ -1235,7 +1375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 82,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MVC-Project\\Views\\Shared\\_Layout.cshtml",
@@ -1247,7 +1387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 83,
               "Title": "MVC-Project.csproj",
               "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\MVC-Project.csproj",
               "RelativeDocumentMoniker": "MVC-Project\\MVC-Project.csproj",

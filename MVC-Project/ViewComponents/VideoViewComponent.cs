@@ -13,6 +13,10 @@ namespace MVC_MiniProject.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var sliders = await _videoViewService.GetAllUIAsync();
+            if (sliders == null)
+            {
+                return Content(string.Empty);
+            }
             return View(sliders);
         }
     }

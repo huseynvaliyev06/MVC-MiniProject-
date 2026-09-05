@@ -1,0 +1,90 @@
+﻿@model CourseInformationUIVM
+<div class="product-gallery-col">
+    <div id="product-gallery" class="product-gallery">
+        <div class="main-image-wrapper">
+            <img id="main-product-image" src="~/images/@Model.MainImage"
+                 alt="@Model.Title"
+                 class="main-product-image">
+            <div class="image-overlay">
+                <button type="button" class="overlay-btn zoom-btn" id="zoom-btn" title="Zoom">
+                    <i class="fa fa-search-plus"></i>
+                </button>
+                <button type="button" class="overlay-btn play-btn" id="play-btn" title="Play Video">
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+            @if (Model.IsFeature)
+            {
+                <div class="gallery-badge featured-badge">Featured</div>
+            }
+            else if (Model.IsNew)
+            {
+                <div class="gallery-badge featured-badge">New</div>
+            }
+        </div>
+        <div class="thumbnail-gallery" id="thumbnail-gallery">
+            <div class="thumbnail-item active" data-image="/images/@Model.MainImage">
+                <img src="~/images/@Model.MainImage" alt="@Model.Title" class="thumbnail-image">
+            </div>
+            @foreach (var img in Model.CourseImages)
+            {
+                @if (!string.IsNullOrEmpty(img.ImageName))
+                {
+                    <div class="thumbnail-item" data-image="/images/@img.ImageName">
+                        <img src="~/images/@img.ImageName" alt="@Model.Title" class="thumbnail-image">
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+
+<div class="product-info-col">
+    <div id="product-info" class="product-info">
+
+        <div class="product-category-tags">
+            @if (Model.IsFeature)
+            {
+                <span class="category-tag category-tag-featured">FEATURED</span>
+            }
+            else if (Model.IsNew)
+            {
+                <span class="category-tag category-tag-featured">NEW</span>
+            }
+        </div>
+
+        <h1 class="product-title" id="product-title">@Model.Title</h1>
+        <div class="product-price-row">
+            <span class="product-current-price">$@Model.Price.ToString()</span>
+        </div>
+
+        <p class="product-short-description">
+            @Model.Description
+        </p>
+
+        <div class="instructor-mini-box">
+            <img src="~/images/@Model.TeacherImage"
+                 alt="@Model.TeacherName" class="instructor-mini-avatar">
+            <div class="instructor-mini-info">
+                <span class="instructor-mini-name">@Model.TeacherName</span>
+                <span class="instructor-mini-title">@Model.SalesCount Sales</span>
+            </div>
+        </div>
+
+        <div class="product-action-buttons">
+            <button type="button" id="add-to-cart-btn" class="btn btn-primary btn-add-to-cart">
+                <i class="fa fa-shopping-cart"></i> ADD TO CART
+            </button>
+            <button type="button" id="buy-now-btn" class="btn btn-secondary btn-buy-now">
+                BUY NOW
+            </button>
+            <button type="button" id="wishlist-btn" class="btn btn-outline btn-wishlist" title="Add to Wishlist">
+                <i class="fa fa-heart-o"></i>
+            </button>
+            <button type="button" id="share-btn" class="btn btn-outline btn-share" title="Share">
+                <i class="fa fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+</div>
