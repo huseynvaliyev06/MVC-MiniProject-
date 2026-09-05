@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MVC_Project.Controllers
+namespace MVC_MiniProject.Controllers
 {
-    public class CourseController: Controller
+    public class CourseController : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string searchText)
         {
-            return View();
+            return View(model: searchText);
         }
     }
 }

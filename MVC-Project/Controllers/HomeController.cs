@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using MVC_Project.Models;
-using System.Diagnostics;
 
-namespace MVC_Project.Controllers
+using Microsoft.AspNetCore.Mvc;
+using MVC_MiniProject.Services.Interfaces;
+using MVC_MiniProject.ViewModels;
+namespace MVC_MiniProject.Controllers
 {
     public class HomeController : Controller
     {
