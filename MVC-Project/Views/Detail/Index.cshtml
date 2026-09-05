@@ -1,0 +1,18 @@
+﻿<section id="product-detail-section" class="product-detail-section" style="padding-top:140px;">
+    <div class="container product-detail-container">
+        <div class="product-detail-row">
+
+            @await Component.InvokeAsync("DetailCourse", Model);
+        </div>
+    </div>
+</section>
+
+
+<div id="image-zoom-modal" class="image-zoom-modal">
+    <button type="button" id="zoom-modal-close" class="zoom-modal-close" aria-label="Close">
+        <i class="fa fa-times"></i>
+    </button>
+    <div class="zoom-modal-content">
+        <img id="zoom-modal-image" src="" alt="Zoomed image">
+    </div>
+</div>
