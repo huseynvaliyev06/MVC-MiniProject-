@@ -1,0 +1,72 @@
+@model AdminCourseEditVM
+@{  ViewData["Title"] = "Edit Course"; }
+
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="page-card">
+    <div class="d-flex align-items-center gap-2 mb-4">
+        <a asp-area="Admin" asp-controller="Course" asp-action="Index" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrow-left"></i></a>
+        <h5 class="mb-0">Edit Course</h5>
+    </div>
+
+    <form asp-area="Admin" asp-controller="Course" asp-action="Edit" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <input asp-for="Id" type="hidden" />
+        <div class="row g-3">
+            <div class="col-md-8">
+                <label class="form-label">Title *</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger small"></span>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Teacher *</label>
+                <select asp-for="TeacherId" asp-items="ViewBag.Teachers" class="form-select"></select>
+            </div>
+            <div class="col-12">
+                <label class="form-label">Description</label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Price ($)</label>
+                <input asp-for="Price" class="form-control" type="number" min="0" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Sales Count</label>
+                <input asp-for="SalesCount" class="form-control" type="number" min="0" />
+            </div>
+            <div class="col-md-2 d-flex align-items-end pb-1">
+                <div class="form-check">
+                    <input asp-for="IsFeature" class="form-check-input" type="checkbox" />
+                    <label asp-for="IsFeature" class="form-check-label">Featured</label>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex align-items-end pb-1">
+                <div class="form-check">
+                    <input asp-for="IsNew" class="form-check-input" type="checkbox" />
+                    <label asp-for="IsNew" class="form-check-label">New</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Main Image</label>
+                @if (!string.IsNullOrEmpty(Model.ExistingMainImage))
+                {
+                    <div class="mb-2">
+                        <img src="~/images/@Model.ExistingMainImage" class="img-thumb" style="width:80px;height:60px" />
+                        <span class="text-muted small ms-2">Current image</span>
+                    </div>
+                }
+                <input asp-for="MainImage" class="form-control" type="file" accept="image/*" />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Add Detail Images</label>
+                <input asp-for="DetailImages" class="form-control" type="file" accept="image/*" multiple />
+            </div>
+        </div>
+        <div class="d-flex gap-2 mt-4">
+            <button type="submit" class="btn btn-accent px-4"><i class="bi bi-check-lg me-1"></i>Update</button>
+            <a asp-area="Admin" asp-controller="Course" asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+</div>
+</div>

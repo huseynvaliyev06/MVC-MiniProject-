@@ -17,7 +17,9 @@ namespace MVC_MiniProject.Services
         {
             var videos = await _context.Videos.OrderByDescending(m => m.Id).Select(m => new VideoUIVM
             {
-                VideoMp4 = m.VideoMp4,
+                Url = m.Url,
+                Name = m.Name
+                ,
             }).FirstOrDefaultAsync();
 
             return videos;

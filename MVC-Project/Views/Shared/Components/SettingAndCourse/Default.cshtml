@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
-                <div class="section_title text-center"><h2>@Model.Settings["Courses"]</h2></div>
-                <div class="section_subtitle">@Model.Settings["CoursesDesc"]</div>
+                <div class="section_title text-center"><h2>@(Model.Settings.ContainsKey("Courses") ? Model.Settings["Courses"] : "Our Courses")</h2></div>
+                <div class="section_subtitle">@(Model.Settings.ContainsKey("CoursesDesc") ? Model.Settings["CoursesDesc"] : "")</div>
             </div>
         </div>
 

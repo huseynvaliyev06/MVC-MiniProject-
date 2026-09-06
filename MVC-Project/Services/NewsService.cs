@@ -21,6 +21,7 @@ namespace MVC_MiniProject.Services
                 Description = m.Description,
                 AuthorName = m.Author.FullName,
                 Image = m.Image,
+                Title = m.Title
             }).ToListAsync();
 
             return news;

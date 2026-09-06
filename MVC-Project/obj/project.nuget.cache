@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/By4wnA+HCc=",
+  "dgSpecHash": "O0TNoc+DdFU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Etibar\\Desktop\\MVC\\MVC-MiniProject-\\MVC-Project\\MVC-Project.csproj",
+  "projectFilePath": "C:\\Users\\Etibar\\Desktop\\MVCC\\MVC-MiniProject-\\MVC-Project\\MVC-Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Etibar\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\Etibar\\.nuget\\packages\\azure.identity\\1.12.1\\azure.identity.1.12.1.nupkg.sha512",

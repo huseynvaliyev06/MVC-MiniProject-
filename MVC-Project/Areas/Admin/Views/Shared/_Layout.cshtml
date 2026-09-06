@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+        :root {
+            --sidebar-width: 260px;
+            --sidebar-bg: #1e2a3a;
+            --sidebar-hover: #2d3f55;
+            --accent: #f97316;
+            --topbar-h: 60px;
+        }
+        body { background: #f0f2f5; font-family: 'Segoe UI', sans-serif; }
+
+        /* ---- SIDEBAR ---- */
+        #sidebar {
+            width: var(--sidebar-width);
+            min-height: 100vh;
+            background: var(--sidebar-bg);
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 1040;
+            display: flex;
+            flex-direction: column;
+            transition: transform .25s ease;
+        }
+        #sidebar .sidebar-brand {
+            height: var(--topbar-h);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            background: rgba(0,0,0,.2);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: .5px;
+        }
+        #sidebar .sidebar-brand span { color: var(--accent); }
+        #sidebar .nav-section {
+            font-size: .68rem;
+            font-weight: 600;
+            color: #7c8fa6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 18px 20px 6px;
+        }
+        #sidebar .nav-item { list-style: none; }
+        #sidebar .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            color: #c4cfd9;
+            text-decoration: none;
+            font-size: .88rem;
+            border-left: 3px solid transparent;
+            transition: all .15s;
+        }
+        #sidebar .nav-link:hover,
+        #sidebar .nav-link.active {
+            background: var(--sidebar-hover);
+            color: #fff;
+            border-left-color: var(--accent);
+        }
+        #sidebar .nav-link i { font-size: 1rem; width: 20px; }
+
+        /* ---- TOPBAR ---- */
+        #topbar {
+            position: fixed;
+            top: 0;
+            left: var(--sidebar-width);
+            right: 0;
+            height: var(--topbar-h);
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,.08);
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            z-index: 1030;
+            gap: 12px;
+        }
+        #topbar .btn-toggle {
+            border: none;
+            background: none;
+            font-size: 1.3rem;
+            color: #555;
+            cursor: pointer;
+            display: none;
+        }
+        #topbar .page-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+        }
+        #topbar .ms-auto { margin-left: auto !important; }
+        #topbar .topbar-link {
+            color: #555;
+            text-decoration: none;
+            font-size: .85rem;
+        }
+        #topbar .topbar-link:hover { color: var(--accent); }
+
+        /* ---- MAIN CONTENT ---- */
+        #main-content {
+            margin-left: var(--sidebar-width);
+            padding-top: var(--topbar-h);
+            min-height: 100vh;
+        }
+        .content-wrapper { padding: 28px 28px 40px; }
+
+        /* ---- CARDS ---- */
+        .stat-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.07);
+            overflow: hidden;
+        }
+        .stat-card .card-body { padding: 20px 24px; }
+        .stat-card .stat-icon {
+            width: 52px; height: 52px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem;
+        }
+        .page-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.07);
+            padding: 24px;
+        }
+        .page-card h5 {
+            font-size: .95rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #333;
+        }
+
+        /* ---- TABLE ---- */
+        .admin-table { width: 100%; border-collapse: separate; border-spacing: 0; }
+        .admin-table thead th {
+            background: #f8f9fa;
+            font-size: .75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            color: #888;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .admin-table tbody td {
+            padding: 13px 16px;
+            font-size: .87rem;
+            color: #444;
+            border-bottom: 1px solid #f0f2f5;
+            vertical-align: middle;
+        }
+        .admin-table tbody tr:last-child td { border-bottom: none; }
+        .admin-table tbody tr:hover { background: #fafbfc; }
+        .img-thumb {
+            width: 50px; height: 40px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        /* ---- BUTTONS ---- */
+        .btn-accent { background: var(--accent); color: #fff; border: none; }
+        .btn-accent:hover { background: #ea6c0a; color: #fff; }
+        .btn-sm-icon {
+            width: 30px; height: 30px;
+            display: inline-flex; align-items: center; justify-content: center;
+            border-radius: 6px; font-size: .82rem; border: none;
+        }
+
+        /* ---- FORM ---- */
+        .form-label { font-size: .82rem; font-weight: 600; color: #555; }
+        .form-control, .form-select {
+            border-radius: 8px;
+            font-size: .87rem;
+            border-color: #dde2e8;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 .2rem rgba(249,115,22,.15);
+        }
+
+        /* ---- ALERTS ---- */
+        .alert { border-radius: 8px; font-size: .87rem; }
+
+        /* ---- RESPONSIVE ---- */
+        @@media (max-width: 991px) {
+            #sidebar { transform: translateX(-100%); }
+            #sidebar.show { transform: translateX(0); }
+            #main-content { margin-left: 0; }
+            #topbar { left: 0; }
+            #topbar .btn-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ======= SIDEBAR ======= -->
+<nav id="sidebar">
+    <a class="sidebar-brand" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+        <span>e</span>Learn&nbsp;<small style="font-size:.7rem;font-weight:400;color:#7c8fa6">admin</small>
+    </a>
+
+    <ul class="list-unstyled mb-0 flex-grow-1 overflow-auto" style="padding-bottom:20px">
+        <li class="nav-section">Main</li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Dashboard" ? "active" : "")"
+               asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                <i class="bi bi-speedometer2"></i> Dashboard
+            </a>
+        </li>
+
+        <li class="nav-section">Content</li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Course" ? "active" : "")"
+               asp-area="Admin" asp-controller="Course" asp-action="Index">
+                <i class="bi bi-journal-bookmark"></i> Courses
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Teacher" ? "active" : "")"
+               asp-area="Admin" asp-controller="Teacher" asp-action="Index">
+                <i class="bi bi-person-badge"></i> Teachers
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Slider" ? "active" : "")"
+               asp-area="Admin" asp-controller="Slider" asp-action="Index">
+                <i class="bi bi-images"></i> Sliders
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "News" ? "active" : "")"
+               asp-area="Admin" asp-controller="News" asp-action="Index">
+                <i class="bi bi-newspaper"></i> News
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Event" ? "active" : "")"
+               asp-area="Admin" asp-controller="Event" asp-action="Index">
+                <i class="bi bi-calendar-event"></i> Events
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Author" ? "active" : "")"
+               asp-area="Admin" asp-controller="Author" asp-action="Index">
+                <i class="bi bi-pencil-square"></i> Authors
+            </a>
+        </li>
+
+        <li class="nav-section">About</li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "AboutLeft" ? "active" : "")"
+               asp-area="Admin" asp-controller="AboutLeft" asp-action="Index">
+                <i class="bi bi-layout-text-sidebar"></i> About Left
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "AboutRight" ? "active" : "")"
+               asp-area="Admin" asp-controller="AboutRight" asp-action="Index">
+                <i class="bi bi-layout-text-sidebar-reverse"></i> About Right
+            </a>
+        </li>
+
+        <li class="nav-section">Config</li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Setting" ? "active" : "")"
+               asp-area="Admin" asp-controller="Setting" asp-action="Index">
+                <i class="bi bi-gear"></i> Settings
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Position" ? "active" : "")"
+               asp-area="Admin" asp-controller="Position" asp-action="Index">
+                <i class="bi bi-briefcase"></i> Positions
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Item" ? "active" : "")"
+               asp-area="Admin" asp-controller="Item" asp-action="Index">
+                <i class="bi bi-list-ul"></i> Items
+            </a>
+        </li>
+
+        <li class="nav-section">Site</li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" target="_blank">
+                <i class="bi bi-box-arrow-up-right"></i> View Site
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- ======= TOPBAR ======= -->
+<div id="topbar">
+    <button class="btn-toggle" id="sidebarToggle"><i class="bi bi-list"></i></button>
+    <h6 class="page-title">@(ViewData["Title"] ?? "Admin Panel")</h6>
+    <div class="ms-auto d-flex align-items-center gap-3">
+        <a class="topbar-link" asp-area="" asp-controller="Home" asp-action="Index" target="_blank">
+            <i class="bi bi-globe2"></i> Site
+        </a>
+        <span style="color:#ddd">|</span>
+        <span style="font-size:.85rem;color:#666"><i class="bi bi-person-circle"></i> Admin</span>
+    </div>
+</div>
+
+<!-- ======= MAIN CONTENT ======= -->
+<div id="main-content">
+    <div class="content-wrapper">
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show mb-3" role="alert">
+                <i class="bi bi-check-circle me-2"></i>@TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+                <i class="bi bi-exclamation-circle me-2"></i>@TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+
+        @RenderBody()
+    </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Mobile sidebar toggle
+    document.getElementById('sidebarToggle')?.addEventListener('click', function () {
+        document.getElementById('sidebar').classList.toggle('show');
+    });
+</script>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

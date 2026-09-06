@@ -19,6 +19,7 @@ namespace MVC_MiniProject.Services
             var items = await _context.Items.Select(m => new ItemUIVM
             {
                 Name = m.Name,
+                Image = m.Image,
             }).ToListAsync();
 
             return items;

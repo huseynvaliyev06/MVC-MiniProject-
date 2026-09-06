@@ -11,7 +11,7 @@
                         <div class="breadcrumbs">
                             <ul>
                                 <li><a href="index-2.html">Home</a></li>
-                                <li>@Model.Settings["AboutTitle"]</li>
+                                <li>@(Model.Settings.ContainsKey("AboutTitle") ? Model.Settings["AboutTitle"] : "About Us")</li>
                             </ul>
                         </div>
                     </div>

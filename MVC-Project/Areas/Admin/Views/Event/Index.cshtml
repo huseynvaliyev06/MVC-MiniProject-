@@ -1,0 +1,44 @@
+@model IEnumerable<Event>
+@{ ViewData["Title"] = "Events"; }
+@{ bool canEdit = User.IsInRole("SuperAdmin"); }
+
+<div class="page-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <h5 class="mb-0"><i class="bi bi-calendar-event me-2 text-info"></i>Events</h5>
+        @if (canEdit)
+        {
+            <a asp-area="Admin" asp-controller="Event" asp-action="Create" class="btn btn-accent btn-sm"><i class="bi bi-plus-lg me-1"></i>New Event</a>
+        }
+    </div>
+    <div class="table-responsive">
+        <table class="admin-table">
+            <thead><tr><th>#</th><th>Date</th><th>Month</th><th>Title</th><th>Description</th><th>Actions</th></tr></thead>
+            <tbody>
+            @foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.Id</td>
+                    <td><strong>@e.Date</strong></td>
+                    <td>@e.Month</td>
+                    <td>@e.Title</td>
+                    <td>@(e.Description?.Length > 60 ? e.Description[..60] + "…" : e.Description)</td>
+                    <td class="d-flex gap-1">
+                        @if (canEdit)
+                        {
+                            <a asp-area="Admin" asp-controller="Event" asp-action="Edit" asp-route-id="@e.Id"
+                               class="btn btn-sm btn-sm-icon btn-warning text-white"><i class="bi bi-pencil"></i></a>
+                            <form asp-area="Admin" asp-controller="Event" asp-action="Delete" asp-route-id="@e.Id" method="post"
+                                  onsubmit="return confirm('Delete this event?')">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-sm-icon btn-danger"><i class="bi bi-trash"></i></button>
+                            </form>
+                        }
+                        else { <span class="text-muted small">View only</span> }
+                    </td>
+                </tr>
+            }
+            @if (!Model.Any()) { <tr><td colspan="6" class="text-center text-muted py-3">No events found.</td></tr> }
+            </tbody>
+        </table>
+    </div>
+</div>

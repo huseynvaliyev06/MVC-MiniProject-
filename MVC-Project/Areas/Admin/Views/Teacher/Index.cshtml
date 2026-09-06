@@ -1,0 +1,43 @@
+@model IEnumerable<AdminTeacherIndexVM>
+@{ ViewData["Title"] = "Teachers"; }
+@{ bool canEdit = User.IsInRole("SuperAdmin"); }
+
+<div class="page-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <h5 class="mb-0"><i class="bi bi-person-badge me-2 text-primary"></i>Teachers</h5>
+        @if (canEdit)
+        {
+            <a asp-area="Admin" asp-controller="Teacher" asp-action="Create" class="btn btn-accent btn-sm"><i class="bi bi-plus-lg me-1"></i>New Teacher</a>
+        }
+    </div>
+    <div class="table-responsive">
+        <table class="admin-table">
+            <thead><tr><th>#</th><th>Photo</th><th>Full Name</th><th>Position</th><th>Actions</th></tr></thead>
+            <tbody>
+            @foreach (var t in Model)
+            {
+                <tr>
+                    <td>@t.Id</td>
+                    <td><img src="~/images/@t.Image" class="img-thumb" style="border-radius:50%;width:38px;height:38px" /></td>
+                    <td><strong>@t.FullName</strong></td>
+                    <td>@t.PositionName</td>
+                    <td class="d-flex gap-1">
+                        @if (canEdit)
+                        {
+                            <a asp-area="Admin" asp-controller="Teacher" asp-action="Edit" asp-route-id="@t.Id"
+                               class="btn btn-sm btn-sm-icon btn-warning text-white"><i class="bi bi-pencil"></i></a>
+                            <form asp-area="Admin" asp-controller="Teacher" asp-action="Delete" asp-route-id="@t.Id" method="post"
+                                  onsubmit="return confirm('Delete this teacher?')">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-sm-icon btn-danger"><i class="bi bi-trash"></i></button>
+                            </form>
+                        }
+                        else { <span class="text-muted small">View only</span> }
+                    </td>
+                </tr>
+            }
+            @if (!Model.Any()) { <tr><td colspan="5" class="text-center text-muted py-3">No teachers found.</td></tr> }
+            </tbody>
+        </table>
+    </div>
+</div>

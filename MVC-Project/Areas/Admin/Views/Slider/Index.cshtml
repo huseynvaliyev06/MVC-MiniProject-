@@ -1,0 +1,44 @@
+@model IEnumerable<Slider>
+@{ ViewData["Title"] = "Sliders"; }
+@{ bool canEdit = User.IsInRole("SuperAdmin"); }
+
+<div class="page-card">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <h5 class="mb-0"><i class="bi bi-images me-2 text-danger"></i>Sliders</h5>
+        @if (canEdit)
+        {
+            <a asp-area="Admin" asp-controller="Slider" asp-action="Create" class="btn btn-accent btn-sm"><i class="bi bi-plus-lg me-1"></i>New Slider</a>
+        }
+    </div>
+    <div class="table-responsive">
+        <table class="admin-table">
+            <thead><tr><th>#</th><th>Banner</th><th>Logo</th><th>Title</th><th>Description</th><th>Actions</th></tr></thead>
+            <tbody>
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.Id</td>
+                    <td><img src="~/images/@s.SliderBanner" class="img-thumb" /></td>
+                    <td><img src="~/images/@s.Logo" class="img-thumb" /></td>
+                    <td><strong>@s.Title</strong></td>
+                    <td>@(s.Description?.Length > 50 ? s.Description[..50] + "…" : s.Description)</td>
+                    <td class="d-flex gap-1">
+                        @if (canEdit)
+                        {
+                            <a asp-area="Admin" asp-controller="Slider" asp-action="Edit" asp-route-id="@s.Id"
+                               class="btn btn-sm btn-sm-icon btn-warning text-white"><i class="bi bi-pencil"></i></a>
+                            <form asp-area="Admin" asp-controller="Slider" asp-action="Delete" asp-route-id="@s.Id" method="post"
+                                  onsubmit="return confirm('Delete this slider?')">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-sm-icon btn-danger"><i class="bi bi-trash"></i></button>
+                            </form>
+                        }
+                        else { <span class="text-muted small">View only</span> }
+                    </td>
+                </tr>
+            }
+            @if (!Model.Any()) { <tr><td colspan="6" class="text-center text-muted py-3">No sliders found.</td></tr> }
+            </tbody>
+        </table>
+    </div>
+</div>

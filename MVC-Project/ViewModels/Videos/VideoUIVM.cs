@@ -2,6 +2,7 @@
 {
     public class VideoUIVM
     {
-        public string VideoMp4 { get; set; }
+        public string Url { get; set; }
+        public string Name { get; internal set; }
     }
 }
