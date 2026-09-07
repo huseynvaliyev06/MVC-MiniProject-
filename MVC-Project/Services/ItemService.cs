@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MVC_MiniProject.Data;
 using MVC_MiniProject.Services.Interfaces;
 using MVC_MiniProject.ViewModels.Items;
@@ -16,13 +15,10 @@ namespace MVC_MiniProject.Services
 
         public async Task<IEnumerable<ItemUIVM>> GetAllUIAsync()
         {
-            var items = await _context.Items.Select(m => new ItemUIVM
+            return await _context.Items.Select(m => new ItemUIVM
             {
-                Name = m.Name,
-                Image = m.Image,
+                Image = m.Image
             }).ToListAsync();
-
-            return items;
         }
     }
 }

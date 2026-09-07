@@ -1,90 +1,265 @@
 ﻿@model CourseInformationUIVM
-<div class="product-gallery-col">
-    <div id="product-gallery" class="product-gallery">
-        <div class="main-image-wrapper">
-            <img id="main-product-image" src="~/images/@Model.MainImage"
-                 alt="@Model.Title"
-                 class="main-product-image">
-            <div class="image-overlay">
-                <button type="button" class="overlay-btn zoom-btn" id="zoom-btn" title="Zoom">
-                    <i class="fa fa-search-plus"></i>
-                </button>
-                <button type="button" class="overlay-btn play-btn" id="play-btn" title="Play Video">
-                    <i class="fa fa-play"></i>
-                </button>
-            </div>
-            @if (Model.IsFeature)
-            {
-                <div class="gallery-badge featured-badge">Featured</div>
-            }
-            else if (Model.IsNew)
-            {
-                <div class="gallery-badge featured-badge">New</div>
-            }
-        </div>
-        <div class="thumbnail-gallery" id="thumbnail-gallery">
-            <div class="thumbnail-item active" data-image="/images/@Model.MainImage">
-                <img src="~/images/@Model.MainImage" alt="@Model.Title" class="thumbnail-image">
-            </div>
-            @foreach (var img in Model.CourseImages)
-            {
-                @if (!string.IsNullOrEmpty(img.ImageName))
-                {
-                    <div class="thumbnail-item" data-image="/images/@img.ImageName">
-                        <img src="~/images/@img.ImageName" alt="@Model.Title" class="thumbnail-image">
-                    </div>
-                }
-            }
-        </div>
-    </div>
+
+<style>
+    .detail-hero {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 40px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+    .detail-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .detail-hero:hover img { transform: scale(1.03); }
+    .detail-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%);
+        border-radius: 16px;
+    }
+    .detail-hero-badge {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: #f67f00;
+        color: #fff;
+        padding: 6px 16px;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .detail-hero-price {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255,255,255,0.95);
+        color: #f67f00;
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .detail-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    }
+    .detail-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 16px;
+        line-height: 1.3;
+    }
+    .detail-desc {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+    .detail-meta {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .detail-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #555;
+        font-size: 15px;
+    }
+    .detail-meta-item i { color: #f67f00; font-size: 18px; }
+    .detail-divider {
+        height: 1px;
+        background: #f0f0f0;
+        margin: 24px 0;
+    }
+    .detail-instructor {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        background: #fafafa;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+    .detail-instructor img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #f67f00;
+    }
+    .detail-instructor-name {
+        font-weight: 700;
+        font-size: 17px;
+        color: #1a1a2e;
+    }
+    .detail-instructor-sub {
+        font-size: 13px;
+        color: #888;
+        margin-top: 2px;
+    }
+    .btn-enroll {
+        background: #f67f00;
+        color: #fff;
+        border: none;
+        padding: 16px 40px;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+    .btn-enroll:hover {
+        background: #d96e00;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(246,127,0,0.4);
+    }
+    .btn-wishlist {
+        background: transparent;
+        border: 2px solid #f67f00;
+        color: #f67f00;
+        padding: 14px 24px;
+        border-radius: 50px;
+        font-size: 17px;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-left: 12px;
+    }
+    .btn-wishlist:hover {
+        background: #f67f00;
+        color: #fff;
+    }
+    .detail-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+    .detail-feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+    .detail-feature-item i { color: #f67f00; }
+    .breadcrumb-detail {
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #888;
+    }
+    .breadcrumb-detail a { color: #f67f00; text-decoration: none; }
+    .breadcrumb-detail a:hover { text-decoration: underline; }
+</style>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb-detail">
+    <a href="/">Home</a> &rsaquo;
+    <a href="/Course">Courses</a> &rsaquo;
+    <span>@Model.Name</span>
 </div>
 
+<!-- Hero Image -->
+@if (!string.IsNullOrEmpty(Model.MainImage))
+{
+    <div class="detail-hero">
+        <img src="~/images/@Model.MainImage" alt="@Model.Name" />
+        <div class="detail-hero-overlay"></div>
+        @if (Model.IsFeatured)
+        {
+            <span class="detail-hero-badge">Featured</span>
+        }
+        else if (!string.IsNullOrEmpty(Model.Tag))
+        {
+            <span class="detail-hero-badge">@Model.Tag</span>
+        }
+        <div class="detail-hero-price">$@Model.Price</div>
+    </div>
+}
 
-<div class="product-info-col">
-    <div id="product-info" class="product-info">
+<!-- Detail Card -->
+<div class="detail-card">
+    <h1 class="detail-title">@Model.Name</h1>
 
-        <div class="product-category-tags">
-            @if (Model.IsFeature)
-            {
-                <span class="category-tag category-tag-featured">FEATURED</span>
-            }
-            else if (Model.IsNew)
-            {
-                <span class="category-tag category-tag-featured">NEW</span>
-            }
+    <!-- Meta info -->
+    <div class="detail-meta">
+        <div class="detail-meta-item">
+            <i class="fa fa-dollar"></i>
+            <span><strong>$@Model.Price</strong> qiymət</span>
         </div>
-
-        <h1 class="product-title" id="product-title">@Model.Title</h1>
-        <div class="product-price-row">
-            <span class="product-current-price">$@Model.Price.ToString()</span>
+        <div class="detail-meta-item">
+            <i class="fa fa-shopping-cart"></i>
+            <span><strong>@Model.SalesCount</strong> satış</span>
         </div>
-
-        <p class="product-short-description">
-            @Model.Description
-        </p>
-
-        <div class="instructor-mini-box">
-            <img src="~/images/@Model.TeacherImage"
-                 alt="@Model.TeacherName" class="instructor-mini-avatar">
-            <div class="instructor-mini-info">
-                <span class="instructor-mini-name">@Model.TeacherName</span>
-                <span class="instructor-mini-title">@Model.SalesCount Sales</span>
+        @if (!string.IsNullOrEmpty(Model.Tag))
+        {
+            <div class="detail-meta-item">
+                <i class="fa fa-tag"></i>
+                <span>@Model.Tag</span>
             </div>
-        </div>
+        }
+    </div>
 
-        <div class="product-action-buttons">
-            <button type="button" id="add-to-cart-btn" class="btn btn-primary btn-add-to-cart">
-                <i class="fa fa-shopping-cart"></i> ADD TO CART
-            </button>
-            <button type="button" id="buy-now-btn" class="btn btn-secondary btn-buy-now">
-                BUY NOW
-            </button>
-            <button type="button" id="wishlist-btn" class="btn btn-outline btn-wishlist" title="Add to Wishlist">
-                <i class="fa fa-heart-o"></i>
-            </button>
-            <button type="button" id="share-btn" class="btn btn-outline btn-share" title="Share">
-                <i class="fa fa-share-alt"></i>
-            </button>
+    <!-- Description -->
+    <p class="detail-desc">@Model.Description</p>
+
+    <!-- Features -->
+    <div class="detail-features">
+        <div class="detail-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Sertifikat verilir</span>
         </div>
+        <div class="detail-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Ömür boyu giriş</span>
+        </div>
+        <div class="detail-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Onlayn öyrənmə</span>
+        </div>
+        <div class="detail-feature-item">
+            <i class="fa fa-check-circle"></i>
+            <span>Ekspert müəllim</span>
+        </div>
+    </div>
+
+    <div class="detail-divider"></div>
+
+    <!-- Instructor -->
+    <div class="detail-instructor">
+        <img src="~/images/@Model.AuthorImage" alt="@Model.TeacherName"
+             onerror="this.src='/images/teacher_1.jpg'" />
+        <div>
+            <div class="detail-instructor-name">@Model.TeacherName</div>
+            <div class="detail-instructor-sub">@Model.SalesCount satış · Ekspert müəllim</div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div>
+        <a href="#" class="btn-enroll">
+            <i class="fa fa-graduation-cap"></i> İndi Qeydiyyat Ol
+        </a>
+        <button class="btn-wishlist" title="İstək siyahısı">
+            <i class="fa fa-heart-o"></i>
+        </button>
     </div>
 </div>

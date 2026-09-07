@@ -30,7 +30,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
         public async Task<IActionResult> Create(AdminItemCreateVM vm)
         {
             if (!ModelState.IsValid) return View(vm);
-            await _context.Items.AddAsync(new Item { Name = vm.Name });
+            await _context.Items.AddAsync(new Item { Image = vm.Image });
             await _context.SaveChangesAsync();
             TempData["Success"] = "Item created.";
             return RedirectToAction(nameof(Index));
@@ -41,7 +41,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             ViewData["Title"] = "Edit Item";
             var item = await _context.Items.FindAsync(id);
             if (item == null) return NotFound();
-            return View(new AdminItemEditVM { Id = item.Id, Name = item.Name });
+            return View(new AdminItemEditVM { Id = item.Id, Image = item.Image });
         }
 
         [HttpPost, ValidateAntiForgeryToken]
@@ -50,7 +50,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             if (!ModelState.IsValid) return View(vm);
             var item = await _context.Items.FindAsync(vm.Id);
             if (item == null) return NotFound();
-            item.Name = vm.Name;
+            item.Image = vm.Image;
             await _context.SaveChangesAsync();
             TempData["Success"] = "Item updated.";
             return RedirectToAction(nameof(Index));

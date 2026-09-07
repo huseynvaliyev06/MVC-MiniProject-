@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Etibar\\Desktop\\MVCC\\MVC-MiniProject-\\",
+  "WorkspaceRootPath": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcc\\mvc-miniproject-\\mvc-project\\models\\courseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\models\\courseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|c:\\users\\etibar\\desktop\\mvcminiproject\\mvc-miniproject-\\mvc-project\\models\\aboutleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92DCAAA0-5775-E4CB-D055-51E3015D96FE}|MVC-Project\\MVC-Project.csproj|solutionrelative:mvc-project\\models\\aboutleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,28 +42,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MVC-Project\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T16:45:47.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IEmailService.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Services\\Interfaces\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Services\\Interfaces\\IEmailService.cs",
+              "RelativeToolTip": "MVC-Project\\Services\\Interfaces\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T16:43:18.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Models\\Email.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Models\\Email.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Models\\Email.cs",
+              "RelativeToolTip": "MVC-Project\\Models\\Email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T16:41:11.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Services\\EmailService.cs",
+              "RelativeToolTip": "MVC-Project\\Services\\EmailService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T16:37:59.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MVC-Project\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\appsettings.Development.json",
+              "RelativeToolTip": "MVC-Project\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-07T16:35:47.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\appsettings.json",
+              "RelativeDocumentMoniker": "MVC-Project\\appsettings.json",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\appsettings.json",
+              "RelativeToolTip": "MVC-Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-07T16:35:40.46Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CourseInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCC\\MVC-MiniProject-\\MVC-Project\\Models\\CourseInfo.cs",
-              "RelativeDocumentMoniker": "MVC-Project\\Models\\CourseInfo.cs",
-              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCC\\MVC-MiniProject-\\MVC-Project\\Models\\CourseInfo.cs",
-              "RelativeToolTip": "MVC-Project\\Models\\CourseInfo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Program.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Program.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Program.cs",
+              "RelativeToolTip": "MVC-Project\\Program.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwHEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-06T12:19:14.902Z",
+              "WhenOpened": "2026-09-07T15:55:22.236Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AboutLeft.cs",
+              "DocumentMoniker": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Models\\AboutLeft.cs",
+              "RelativeDocumentMoniker": "MVC-Project\\Models\\AboutLeft.cs",
+              "ToolTip": "C:\\Users\\Etibar\\Desktop\\MVCminiproject\\MVC-MiniProject-\\MVC-Project\\Models\\AboutLeft.cs",
+              "RelativeToolTip": "MVC-Project\\Models\\AboutLeft.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T15:18:34.855Z"
             }
           ]
         }

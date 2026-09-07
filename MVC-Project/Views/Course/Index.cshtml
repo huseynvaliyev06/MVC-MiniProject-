@@ -36,4 +36,4 @@
 
 
 @await Component.InvokeAsync("HomeCourse");
-@await Component.InvokeAsync("SettingAndCourse");
+@await Component.InvokeAsync("SettingAndCourse", new { searchText = Model });

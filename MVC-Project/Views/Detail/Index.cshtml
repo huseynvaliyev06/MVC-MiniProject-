@@ -1,18 +1,14 @@
-﻿<section id="product-detail-section" class="product-detail-section" style="padding-top:140px;">
-    <div class="container product-detail-container">
-        <div class="product-detail-row">
+﻿@model int
+@{
+    ViewData["Title"] = "Course Detail";
+}
 
-            @await Component.InvokeAsync("DetailCourse", Model);
+<section style="padding: 100px 0 60px; background: #f8f9fa; min-height: 100vh;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                @await Component.InvokeAsync("DetailCourse", Model)
+            </div>
         </div>
     </div>
 </section>
-
-
-<div id="image-zoom-modal" class="image-zoom-modal">
-    <button type="button" id="zoom-modal-close" class="zoom-modal-close" aria-label="Close">
-        <i class="fa fa-times"></i>
-    </button>
-    <div class="zoom-modal-content">
-        <img id="zoom-modal-image" src="" alt="Zoomed image">
-    </div>
-</div>

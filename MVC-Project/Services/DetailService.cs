@@ -16,24 +16,24 @@ namespace MVC_MiniProject.Services
 
         public async Task<CourseInformationUIVM> GetByIdAsync(int id)
         {
-            var course = await _context.Courses.Where(m => m.Id == id).Include(c => c.CourseImages).Include(c => c.Teacher).Select(m => new CourseInformationUIVM
-            {
-                Id = m.Id,
-                Title = m.Title,
-                Description = m.Description,
-                Price = m.Price,
-                SalesCount = m.SalesCount,
-                IsFeature = m.IsFeature,
-                IsNew = m.IsNew,
-                TeacherName = m.Teacher.FullName,
-                TeacherImage = m.Teacher.Image,
-                MainImage = m.CourseImages.FirstOrDefault(c => c.IsMain).CourseImg,
-                CourseImages = m.CourseImages.Select(image => new CoursesImageUIVM
+            var course = await _context.Courses
+                .Where(m => m.Id == id)
+                .Include(c => c.Teacher)
+                .Select(m => new CourseInformationUIVM
                 {
-                    ImageName = image.CourseImg,
-                    IsMain = image.IsMain
-                }).ToList()
-            }).FirstOrDefaultAsync();
+                    Id = m.Id,
+                    Name = m.Name,
+                    Description = m.Description,
+                    Price = m.Price,
+                    SalesCount = m.SalesCount,
+                    IsFeatured = m.IsFeatured,
+                    AuthorImage = m.AuthorImage,
+                    Tag = m.Tag,
+                    MainImage = m.MainImage,
+                    TeacherName = m.Teacher.FullName,
+                    TeacherImage = m.Teacher.Image
+                })
+                .FirstOrDefaultAsync();
 
             return course;
         }

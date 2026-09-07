@@ -15,28 +15,24 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
         private readonly AppDbContext _context;
         public CourseController(AppDbContext context) => _context = context;
 
-        // GET /Admin/Course
         public async Task<IActionResult> Index()
         {
             ViewData["Title"] = "Courses";
             var list = await _context.Courses
                 .Include(c => c.Teacher)
-                .Include(c => c.CourseImages)
                 .Select(c => new AdminCourseIndexVM
                 {
                     Id          = c.Id,
-                    Title       = c.Title,
+                    Name        = c.Name,
                     Price       = c.Price,
                     SalesCount  = c.SalesCount,
-                    IsFeature   = c.IsFeature,
-                    IsNew       = c.IsNew,
-                    TeacherName = c.Teacher.FullName,
-                    MainImage   = c.CourseImages.FirstOrDefault(x => x.IsMain).CourseImg
+                    IsFeatured  = c.IsFeatured,
+                    Tag         = c.Tag,
+                    TeacherName = c.Teacher.FullName
                 }).ToListAsync();
             return View(list);
         }
 
-        // GET /Admin/Course/Create
         public async Task<IActionResult> Create()
         {
             ViewData["Title"] = "New Course";
@@ -44,100 +40,98 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             return View(new AdminCourseCreateVM());
         }
 
-        // POST /Admin/Course/Create
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(AdminCourseCreateVM vm)
         {
             if (!ModelState.IsValid) { await PopulateTeachers(vm.TeacherId); return View(vm); }
 
-            var images = new List<CourseImage>();
-            string folder = Path.Combine("wwwroot", "images");
-            Directory.CreateDirectory(folder);
+            string? mainImageName = vm.MainImage;
 
-            if (vm.MainImage != null)
+            if (vm.MainImageFile != null)
             {
-                var name = Guid.NewGuid() + Path.GetExtension(vm.MainImage.FileName);
-                await using var s = new FileStream(Path.Combine(folder, name), FileMode.Create);
-                await vm.MainImage.CopyToAsync(s);
-                images.Add(new CourseImage { CourseImg = name, IsMain = true });
+                string folder = Path.Combine("wwwroot", "images");
+                Directory.CreateDirectory(folder);
+                mainImageName = Guid.NewGuid() + Path.GetExtension(vm.MainImageFile.FileName);
+                await using var s = new FileStream(Path.Combine(folder, mainImageName), FileMode.Create);
+                await vm.MainImageFile.CopyToAsync(s);
             }
-            if (vm.DetailImages != null)
-                foreach (var f in vm.DetailImages)
-                {
-                    var name = Guid.NewGuid() + Path.GetExtension(f.FileName);
-                    await using var s = new FileStream(Path.Combine(folder, name), FileMode.Create);
-                    await f.CopyToAsync(s);
-                    images.Add(new CourseImage { CourseImg = name, IsMain = false });
-                }
 
             await _context.Courses.AddAsync(new CourseInfo
             {
-                Title = vm.Title, Description = vm.Description,
-                Price = vm.Price, SalesCount = vm.SalesCount,
-                IsFeature = vm.IsFeature, IsNew = vm.IsNew,
-                TeacherId = vm.TeacherId, CourseImages = images
+                Name        = vm.Name,
+                Description = vm.Description,
+                Price       = vm.Price,
+                SalesCount  = vm.SalesCount,
+                IsFeatured  = vm.IsFeatured,
+                AuthorImage = vm.AuthorImage,
+                Tag         = vm.Tag,
+                MainImage   = mainImageName,
+                TeacherName = vm.TeacherName,
+                TeacherId   = vm.TeacherId
             });
             await _context.SaveChangesAsync();
             TempData["Success"] = "Course created.";
             return RedirectToAction(nameof(Index));
         }
 
-        // GET /Admin/Course/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
             ViewData["Title"] = "Edit Course";
-            var c = await _context.Courses.Include(x => x.CourseImages).FirstOrDefaultAsync(x => x.Id == id);
+            var c = await _context.Courses.FirstOrDefaultAsync(x => x.Id == id);
             if (c == null) return NotFound();
             await PopulateTeachers(c.TeacherId);
             return View(new AdminCourseEditVM
             {
-                Id = c.Id, Title = c.Title, Description = c.Description,
-                Price = c.Price, SalesCount = c.SalesCount,
-                IsFeature = c.IsFeature, IsNew = c.IsNew, TeacherId = c.TeacherId,
-                ExistingMainImage = c.CourseImages.FirstOrDefault(x => x.IsMain)?.CourseImg
+                Id               = c.Id,
+                Name             = c.Name,
+                Description      = c.Description,
+                Price            = c.Price,
+                SalesCount       = c.SalesCount,
+                IsFeatured       = c.IsFeatured,
+                AuthorImage      = c.AuthorImage,
+                Tag              = c.Tag,
+                MainImage        = c.MainImage,
+                TeacherName      = c.TeacherName,
+                TeacherId        = c.TeacherId,
+                ExistingMainImage = c.MainImage
             });
         }
 
-        // POST /Admin/Course/Edit/5
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(AdminCourseEditVM vm)
         {
             if (!ModelState.IsValid) { await PopulateTeachers(vm.TeacherId); return View(vm); }
 
-            var c = await _context.Courses.Include(x => x.CourseImages).FirstOrDefaultAsync(x => x.Id == vm.Id);
+            var c = await _context.Courses.FirstOrDefaultAsync(x => x.Id == vm.Id);
             if (c == null) return NotFound();
 
-            c.Title = vm.Title; c.Description = vm.Description;
-            c.Price = vm.Price; c.SalesCount = vm.SalesCount;
-            c.IsFeature = vm.IsFeature; c.IsNew = vm.IsNew; c.TeacherId = vm.TeacherId;
+            string? mainImageName = vm.MainImage;
 
-            string folder = Path.Combine("wwwroot", "images");
-            Directory.CreateDirectory(folder);
-
-            if (vm.MainImage != null)
+            if (vm.MainImageFile != null)
             {
-                var name = Guid.NewGuid() + Path.GetExtension(vm.MainImage.FileName);
-                await using var s = new FileStream(Path.Combine(folder, name), FileMode.Create);
-                await vm.MainImage.CopyToAsync(s);
-                var existing = c.CourseImages.FirstOrDefault(x => x.IsMain);
-                if (existing != null) existing.CourseImg = name;
-                else c.CourseImages.Add(new CourseImage { CourseImg = name, IsMain = true });
+                string folder = Path.Combine("wwwroot", "images");
+                Directory.CreateDirectory(folder);
+                mainImageName = Guid.NewGuid() + Path.GetExtension(vm.MainImageFile.FileName);
+                await using var s = new FileStream(Path.Combine(folder, mainImageName), FileMode.Create);
+                await vm.MainImageFile.CopyToAsync(s);
             }
-            if (vm.DetailImages != null)
-                foreach (var f in vm.DetailImages)
-                {
-                    var name = Guid.NewGuid() + Path.GetExtension(f.FileName);
-                    await using var s = new FileStream(Path.Combine(folder, name), FileMode.Create);
-                    await f.CopyToAsync(s);
-                    c.CourseImages.Add(new CourseImage { CourseImg = name, IsMain = false });
-                }
+
+            c.Name        = vm.Name;
+            c.Description = vm.Description;
+            c.Price       = vm.Price;
+            c.SalesCount  = vm.SalesCount;
+            c.IsFeatured  = vm.IsFeatured;
+            c.AuthorImage = vm.AuthorImage;
+            c.Tag         = vm.Tag;
+            c.MainImage   = mainImageName;
+            c.TeacherName = vm.TeacherName;
+            c.TeacherId   = vm.TeacherId;
 
             await _context.SaveChangesAsync();
             TempData["Success"] = "Course updated.";
             return RedirectToAction(nameof(Index));
         }
 
-        // POST /Admin/Course/Delete/5
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {

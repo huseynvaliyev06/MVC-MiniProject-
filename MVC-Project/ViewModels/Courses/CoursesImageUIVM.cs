@@ -2,7 +2,9 @@
 {
     public class CoursesImageUIVM
     {
-        public bool IsMain { get; set; }
-        public string ImageName { get; set; }
+        public int CourseId { get; set; }
+        public int ImageId { get; set; }
+        public int AppImageId { get; set; }
+        public int CourseInfoId { get; set; }
     }
 }

@@ -12,13 +12,17 @@
     </div>
     <div class="table-responsive">
         <table class="admin-table">
-            <thead><tr><th>#</th><th>Name</th><th>Actions</th></tr></thead>
+            <thead><tr><th>#</th><th>Image</th><th>Actions</th></tr></thead>
             <tbody>
             @foreach (var item in Model)
             {
                 <tr>
                     <td>@item.Id</td>
-                    <td><strong>@item.Name</strong></td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.Image))
+                        { <img src="~/images/@item.Image" class="img-thumb" style="width:50px;height:40px" alt="" /> }
+                        else { <span class="text-muted">—</span> }
+                    </td>
                     <td class="d-flex gap-1">
                         @if (canEdit)
                         {

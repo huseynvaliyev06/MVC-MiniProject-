@@ -16,17 +16,13 @@
                             <div class="col-lg-6 featured_col">
                                 <div class="featured_content">
                                     <div class="featured_header d-flex flex-row align-items-center justify-content-start">
-                                        @if (item.IsFeature)
+                                        @if (item.IsFeatured)
                                         {
                                             <div class="featured_tag"><a href="#">Featured</a></div>
                                         }
-                                        else if (item.IsNew)
-                                        {
-                                            <div class="featured_tag"><a href="#">New</a></div>
-                                        }
                                         <div class="featured_price ml-auto">Price: <span>$@item.Price</span></div>
                                     </div>
-                                    <div class="featured_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Title</a></h3></div>
+                                    <div class="featured_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Name</a></h3></div>
                                     <div class="featured_text">@item.Description</div>
                                     <div class="featured_footer d-flex align-items-center justify-content-start">
                                         <div class="featured_author_image"><img src="~/images/@item.TeacherImage" alt=""></div>
@@ -36,8 +32,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 featured_col">
-
-                                <div class="featured_background" style="background-image:url(images/@item.MainImage)"></div>
+                                <div class="featured_background" style="background-image:url(/images/@item.MainImage)"></div>
                             </div>
                         </div>
                     }
@@ -76,26 +71,26 @@
                         {
                             <div class="owl-item">
                                 <div class="course">
-                                    <div class="course_image"><img src="~/images/@item.MainImage" alt=""></div>
+                                    <div class="course_image"><img src="~/images/@item.MainImage" alt="@item.Name"></div>
                                     <div class="course_body">
                                         <div class="course_header d-flex flex-row align-items-center justify-content-start">
-                                            @if (item.IsFeature)
+                                            @if (item.IsFeatured)
                                             {
                                                 <div class="course_tag"><a href="#">Featured</a></div>
                                             }
-                                            else if (item.IsNew)
+                                            else if (!string.IsNullOrEmpty(item.Tag))
                                             {
-                                                <div class="course_tag"><a href="#">New</a></div>
+                                                <div class="course_tag"><a href="#">@item.Tag</a></div>
                                             }
 
 
                                             <div class="course_price ml-auto">Price: <span>$@item.Price</span></div>
                                         </div>
-                                        <div class="course_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Title</a></h3></div>
+                                        <div class="course_title"><h3><a asp-controller="Detail" asp-action="Index" asp-route-id="@item.Id">@item.Name</a></h3></div>
                                         <div class="course_text">@item.Description</div>
                                         <div class="course_footer d-flex align-items-center justify-content-start">
-                                            <div class="course_author_image"><img src="~/images/@item.TeacherImage" alt="https://unsplash.com/anthonytran"></div>
-                                            <div class="course_author_name">By <a href="#">@item.TeacherName</a></div>
+                                            <div class="course_author_image"><img src="~/images/@item.AuthorImage" alt=""></div>
+                                            <div class="course_author_name">@item.TeacherName</div>
                                             <div class="course_sales ml-auto"><span>@item.SalesCount</span> Sales</div>
                                         </div>
                                     </div>

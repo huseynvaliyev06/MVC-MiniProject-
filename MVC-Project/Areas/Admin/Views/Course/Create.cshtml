@@ -13,9 +13,9 @@
         @Html.AntiForgeryToken()
         <div class="row g-3">
             <div class="col-md-8">
-                <label class="form-label">Title *</label>
-                <input asp-for="Title" class="form-control" placeholder="Course title" />
-                <span asp-validation-for="Title" class="text-danger small"></span>
+                <label class="form-label">Name *</label>
+                <input asp-for="Name" class="form-control" placeholder="Course name" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
             </div>
             <div class="col-md-4">
                 <label class="form-label">Teacher *</label>
@@ -23,6 +23,10 @@
                     <option value="">— Select Teacher —</option>
                 </select>
                 <span asp-validation-for="TeacherId" class="text-danger small"></span>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Teacher Name</label>
+                <input asp-for="TeacherName" class="form-control" placeholder="e.g. John Smith" />
             </div>
             <div class="col-12">
                 <label class="form-label">Description</label>
@@ -36,21 +40,27 @@
                 <label class="form-label">Sales Count</label>
                 <input asp-for="SalesCount" class="form-control" type="number" min="0" />
             </div>
-            <div class="col-md-2 d-flex align-items-end pb-1">
-                <div class="form-check">
-                    <input asp-for="IsFeature" class="form-check-input" type="checkbox" />
-                    <label asp-for="IsFeature" class="form-check-label">Featured</label>
-                </div>
+            <div class="col-md-4">
+                <label class="form-label">Tag</label>
+                <input asp-for="Tag" class="form-control" placeholder="e.g. New, Popular" />
             </div>
             <div class="col-md-2 d-flex align-items-end pb-1">
                 <div class="form-check">
-                    <input asp-for="IsNew" class="form-check-input" type="checkbox" />
-                    <label asp-for="IsNew" class="form-check-label">New</label>
+                    <input asp-for="IsFeatured" class="form-check-input" type="checkbox" />
+                    <label asp-for="IsFeatured" class="form-check-label">Featured</label>
                 </div>
             </div>
             <div class="col-md-6">
-                <label class="form-label">Main Image</label>
-                <input asp-for="MainImage" class="form-control" type="file" accept="image/*" />
+                <label class="form-label">Author Image URL</label>
+                <input asp-for="AuthorImage" class="form-control" placeholder="author-image.jpg" />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Main Image (fayl yüklə)</label>
+                <input asp-for="MainImageFile" class="form-control" type="file" accept="image/*" />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Main Image (ad yaz)</label>
+                <input asp-for="MainImage" class="form-control" placeholder="course_1.jpg" />
             </div>
             <div class="col-md-6">
                 <label class="form-label">Detail Images</label>

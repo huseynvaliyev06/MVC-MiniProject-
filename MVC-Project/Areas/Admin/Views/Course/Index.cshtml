@@ -16,8 +16,8 @@
         <table class="admin-table">
             <thead>
                 <tr>
-                    <th>#</th><th>Image</th><th>Title</th><th>Teacher</th>
-                    <th>Price</th><th>Sales</th><th>Feature</th><th>New</th><th>Actions</th>
+                    <th>#</th><th>Name</th><th>Teacher</th>
+                    <th>Price</th><th>Sales</th><th>Featured</th><th>Tag</th><th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,17 +25,12 @@
             {
                 <tr>
                     <td>@item.Id</td>
-                    <td>
-                        @if (!string.IsNullOrEmpty(item.MainImage))
-                        { <img src="~/images/@item.MainImage" class="img-thumb" alt="" /> }
-                        else { <span class="text-muted">—</span> }
-                    </td>
-                    <td><strong>@item.Title</strong></td>
+                    <td><strong>@item.Name</strong></td>
                     <td>@item.TeacherName</td>
                     <td>$@item.Price</td>
                     <td>@item.SalesCount</td>
-                    <td>@(item.IsFeature ? "✓" : "—")</td>
-                    <td>@(item.IsNew ? "✓" : "—")</td>
+                    <td>@(item.IsFeatured ? "✓" : "—")</td>
+                    <td>@(string.IsNullOrEmpty(item.Tag) ? "—" : item.Tag)</td>
                     <td class="d-flex gap-1">
                         @if (canEdit)
                         {
@@ -55,7 +50,7 @@
                 </tr>
             }
             @if (!Model.Any())
-            { <tr><td colspan="9" class="text-center text-muted py-3">No courses found.</td></tr> }
+            { <tr><td colspan="8" class="text-center text-muted py-3">No courses found.</td></tr> }
             </tbody>
         </table>
     </div>
